@@ -1,0 +1,172 @@
+04-Dec-20 04:55:04 - 127.0.0.1 - - [04/Dec/2020 04:55:04] "[37mGET /index?alarm=2020-12-01T04%3A54&two=d HTTP/1.1[0m" 200 -
+04-Dec-20 04:56:05 - 127.0.0.1 - - [04/Dec/2020 04:56:05] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 04:57:05 - 127.0.0.1 - - [04/Dec/2020 04:57:05] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 04:58:05 - 127.0.0.1 - - [04/Dec/2020 04:58:05] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 04:59:05 - 127.0.0.1 - - [04/Dec/2020 04:59:05] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 05:00:07 - 127.0.0.1 - - [04/Dec/2020 05:00:07] "[37mGET /index?alarm=2020-12-03T05%3A00&two=hello HTTP/1.1[0m" 200 -
+04-Dec-20 05:01:07 - 127.0.0.1 - - [04/Dec/2020 05:01:07] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 05:02:07 - 127.0.0.1 - - [04/Dec/2020 05:02:07] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 05:03:07 - 127.0.0.1 - - [04/Dec/2020 05:03:07] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 05:04:07 - 127.0.0.1 - - [04/Dec/2020 05:04:07] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 05:05:08 - 127.0.0.1 - - [04/Dec/2020 05:05:08] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 05:06:08 - 127.0.0.1 - - [04/Dec/2020 05:06:08] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 05:07:08 - 127.0.0.1 - - [04/Dec/2020 05:07:08] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 05:08:08 - 127.0.0.1 - - [04/Dec/2020 05:08:08] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 05:09:08 - 127.0.0.1 - - [04/Dec/2020 05:09:08] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 05:10:08 - 127.0.0.1 - - [04/Dec/2020 05:10:08] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 05:11:08 - 127.0.0.1 - - [04/Dec/2020 05:11:08] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 05:12:08 - 127.0.0.1 - - [04/Dec/2020 05:12:08] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 05:13:08 - 127.0.0.1 - - [04/Dec/2020 05:13:08] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 05:14:08 - 127.0.0.1 - - [04/Dec/2020 05:14:08] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 05:15:08 - 127.0.0.1 - - [04/Dec/2020 05:15:08] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 05:16:09 - 127.0.0.1 - - [04/Dec/2020 05:16:09] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 05:17:09 - 127.0.0.1 - - [04/Dec/2020 05:17:09] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 05:18:09 - 127.0.0.1 - - [04/Dec/2020 05:18:09] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 05:19:09 - 127.0.0.1 - - [04/Dec/2020 05:19:09] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 05:20:09 - 127.0.0.1 - - [04/Dec/2020 05:20:09] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 05:21:09 - 127.0.0.1 - - [04/Dec/2020 05:21:09] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 05:22:09 - 127.0.0.1 - - [04/Dec/2020 05:22:09] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 05:23:09 - 127.0.0.1 - - [04/Dec/2020 05:23:09] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 05:24:09 - 127.0.0.1 - - [04/Dec/2020 05:24:09] "[37mGET /index HTTP/1.1[0m" 200 -
+04-Dec-20 05:25:09 - 127.0.0.1 - - [04/Dec/2020 05:25:09] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 05:37:51] "[37mGET /index?alarm=2020-12-04T05%3A39&two=hello&news=news&weather=weather HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 05:37:55] "[37mGET /index?alarm_item=2020-12-04+05%3A39 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 05:38:55] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 05:39:55] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 05:40:55] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 05:41:55] "[37mGET /index HTTP/1.1[0m" 200 -
+ERROR:web_server:Exception on /index [GET]
+Traceback (most recent call last):
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Utilizador\Desktop\University\Programming\Assessment 3\web_server.py", line 88, in index
+    schedule_announcement(date,news,weather)
+  File "C:\Users\Utilizador\Desktop\University\Programming\Assessment 3\web_server.py", line 101, in schedule_announcement
+    alarm_dict = { "title": date_formatted, "content": label }
+NameError: name 'date_formatted' is not defined
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 05:42:38] "[35m[1mGET /index?alarm=2020-12-04T05%3A43&two=d HTTP/1.1[0m" 500 -
+ERROR:web_server:Exception on /index [GET]
+Traceback (most recent call last):
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Utilizador\Desktop\University\Programming\Assessment 3\web_server.py", line 88, in index
+    schedule_announcement(date,news,weather,alarms)
+  File "C:\Users\Utilizador\Desktop\University\Programming\Assessment 3\web_server.py", line 101, in schedule_announcement
+    alarm_dict = { "title": date_formatted, "content": label }
+NameError: name 'date_formatted' is not defined
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 05:43:38] "[35m[1mGET /index?alarm=2020-12-04T05%3A44&two=hello HTTP/1.1[0m" 500 -
+ERROR:web_server:Exception on /index [GET]
+Traceback (most recent call last):
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Utilizador\Desktop\University\Programming\Assessment 3\web_server.py", line 89, in index
+    schedule_announcement(date,date_formatted,label,news,weather)
+  File "C:\Users\Utilizador\Desktop\University\Programming\Assessment 3\web_server.py", line 103, in schedule_announcement
+    alarms.append(alarm_dict)
+NameError: name 'alarms' is not defined
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 05:46:29] "[35m[1mGET /index?alarm=2020-12-04T05%3A47&two=hello HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 05:47:54] "[37mGET /index?alarm=2020-12-04T05%3A48&two=s HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 05:48:59] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 05:49:59] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 05:50:59] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 05:51:59] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 05:52:59] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 05:53:59] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 05:54:59] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 05:55:59] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 05:56:59] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 05:58:00] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 05:58:56] "[37mGET /index?alarm=2020-12-04T05%3A59&two=hello&news=news HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 05:59:10] "[37mGET /index?alarm=2020-12-04T06%3A01&two=d HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 05:59:13] "[37mGET /index?alarm_item=2020-12-04+06%3A01 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:00:05] "[37mGET /index?alarm_item=2020-12-04+06%3A01 HTTP/1.1[0m" 200 -
+ERROR:web_server:Exception on /index [GET]
+Traceback (most recent call last):
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Utilizador\Desktop\University\Programming\Assessment 3\web_server.py", line 56, in index
+    cancel_alarm(alarm)
+  File "C:\Users\Utilizador\Desktop\University\Programming\Assessment 3\web_server.py", line 188, in cancel_alarm
+    s.cancel(s.queue[index])
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:00:13] "[35m[1mGET /index?alarm_item=2020-12-04+05%3A59 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:00:17] "[37mGET /index?notif=2020-12-04+06%3A00+Exeter%3A+Covid+Update HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:00:20] "[37mGET /index?notif=2020-12-04+06%3A00+Exeter%3A+News+update HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:00:25] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:01:25] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:02:25] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:03:25] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:05:00] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:05:03] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:05:03] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:05:09] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:05:12] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:06:12] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:07:12] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:08:12] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:09:12] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:10:12] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:11:12] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:12:12] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:13:13] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:14:13] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:15:13] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:16:13] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:17:13] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:18:13] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:19:14] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:20:14] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:21:14] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:22:14] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:23:14] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:24:14] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:25:14] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:26:15] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:27:15] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:28:15] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:29:15] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:30:15] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:31:15] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:32:15] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:33:15] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:34:15] "[37mGET /index HTTP/1.1[0m" 200 -
