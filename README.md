@@ -1,19 +1,19 @@
-# COVID Daily Breifing App
+# COVID Daily Briefing App
 
 ### Introduction
-This alarm clock allows users to access information on the weather and current Covid-19 infection rates in their local area, as well as the top news headlines in the UK. It provides an easy and efficient way to stay up to date with the constantly-changing Covid-19 situation and keeps users informed and aware of the infection rates in their local area by displaying scheduled notification updates. 
+This daily briefing alarm clock provides the user with easy access to the latest information on covid infection rates and weather in their local area, as well as the top UK headlines. 
 ### App Features
 - Finds the location of the user to provide updates for their local area. 
-- Provides weather, news, and Covid-19 infection rate updates. 
-- The user can schedule and cancel alarms at any chosen time. 
-- The notifications are updated every hour to efficiently track the events. 
-- The announcement alarms use text-to-speech voice announcements and silent notifications are displayed.
+- Provides Covid-19 infection rate, news and weather updates. 
+- The user has the capability of scheduling and canceling alarms at any chosen time. 
+- The data is updated every hour to ensure the user receives recent and up to date information. 
+- The alarm clock utilizes text-to-speech voice announcements for immediate notificatinos and displays silent notifications.
 
 ### Prerequisites
   - Python 3.7+ (I am using version 3.9)
-  - An IDE or texteditor (ex. Pycharm or Sublime)
+  - An IDE or texteditor (ex. Pycharm or Idle)
   - [Weather] and [news] API keys
-  - Stable internet connection and some programming knowledge:)
+  - Stable internet connection
   
 ### Installation
 > Packages in the requirement.txt file need to be installed first using pip: 
@@ -38,40 +38,23 @@ To install **uk-covid19**, run:
 ```sh
 $ pip install uk-covid19
 ```
-Alternatively, you could activate your virtualenv and run:
-```sh
-$ pip install -r requirements.txt
-```
-
 ### How to use
 - When the website is opened, the user interface should look like: 
-(insert image of that)
+
 - The user can click on the calendar icon to schedule the date and time of an announcement. 
-- The user can also choose whether or not to include a weather and news briefing in the announcement. 
-(insert image of that)
-- Once the alarm is scheduled, it will be added to the alarms column:
-(insert image of that)
-- The user can cancel scheduled alarms by clicking on the “x” in the top right corner. 
-- When the scheduled time is reached, a voice announcement will be made, reading the updated daily briefing.
-- Silent notifications will appear in the notifications column, and will continuously be updated every hour.
-(insert image of that)
+- The user can also choose whether or not to include adittional briefings in the announcement through two chceckboxes, one to include a news briefing and another to include a weather briefing . 
+- Once the alarm is scheduled, it will be added to the alarms column on left-hand side of the HTML page and a voice will report the sucessful scheduling.
+- The user can cancel scheduled alarms by clicking on the “x” in the top right corner of said alarm and a voice announcement will report the alarm canceling. 
+- When the scheduled time is reached, a voice announcement will be made, reading the alarm responsible for the notification or notifications shown.
+- Silent notifications will appear in the notifications column on the right-hand side of the HTML page.
 - Silent notifications can be dismissed by clicking the “x” in the top right corner.
 
 
 ### Developer's guide
 - Copy all provided files into a new directory 
 - First, you will need to get API keys from the [weather] and [news] websites in order to complete the URL and have access to the updates.
-- My code is set to provide news and Covid-19 updates in the Uk, and the current weather in Exeter. The region, as well as the news and types of updates extracted from the websites can be changed to fit your preference. 
-- There are plenty of different options to customize the updates. For a full guide on how to access and implement these choices, follow the developer's guide on these websites: 
--- Weather: https://openweathermap.org/api
--- News: https://newsapi.org/docs/endpoints/sources
--- Covid-19: https://coronavirus.data.gov.uk/details/developers-guide
-- The images displayed on user interface, announcement voice, and frequency of updates is customizable to suit your preference:
-Check out https://pypi.org/project/pyttsx3/ for details on how to customize the text-to-speech function.
+- The daily briefing will give covid numbers and weather information from the location in the UK where the user is located and the news will be from the UK as a whole.
 - The daily briefing can be easily changed to include updates of your choice by editing the the 'notification_dict' commands. 
-
-### Testing 
-- 
 
 ### Links and Sources
 - Weather API: https://openweathermap.org/api
@@ -84,7 +67,7 @@ Check out https://pypi.org/project/pyttsx3/ for details on how to customize the 
 
 ### License
 ----
-Copyright (c) [2020] [Zaina Al Shebli]
+Copyright (c) [2020] [Pedro Miguel Catarino da Silva Pereira]
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files "covid-daily-briefing-app", to deal
 in the Software without restriction, including without limitation the rights
