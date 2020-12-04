@@ -1,5 +1,6 @@
 # COVID Daily Briefing App
 
+### [GitHub]
 ### Introduction
 This daily briefing alarm clock provides the user with easy access to the latest information on covid infection rates and weather in their local area, as well as the top UK headlines. 
 ### App Features
@@ -90,7 +91,8 @@ SOFTWARE.
 
 
 
-
+    
+   [GitHub]: <https://github.com/Pemacope/Assessment_3>
    [weather]: <https://openweathermap.orgr>
    [news]: <https://newsapi.org/>
    
