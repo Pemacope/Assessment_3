@@ -1,0 +1,6 @@
+nullINFO:werkzeug:127.0.0.1 - - [04/Dec/2020 08:25:04] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 08:25:28] "[37mGET /index?alarm=2020-12-04T08%3A26&two=hello HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 08:26:33] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 08:27:34] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 08:28:34] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 08:29:35] "[37mGET /index HTTP/1.1[0m" 200 -

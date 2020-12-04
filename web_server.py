@@ -16,16 +16,16 @@ import pyttsx3
 
 s = sched.scheduler(time.time, time.sleep)
 
-s_data = sched.scheduler(time.time, time.sleep)
-
 app = Flask(__name__)
 
 @app.route('/')
 def main():
     """ Presents the html page, title, image, alarms and notifications """
+
+    update_data()
     
     #Sets alarms and notifications empty because at the beggining of the program the alarms.json and notifications.json files need to be empty 
-    alarms,notifications = [],[]
+    alarms,notifications,log = [],[],None
 
     #store the notifications in the notifications.json file
     with open('notifications.json', 'w') as notifications_file:
@@ -35,17 +35,20 @@ def main():
     with open('alarms.json', 'w') as alarms_file:
         json.dump(alarms, alarms_file)
 
+    #store the alarms in the alarms.json file
+    with open('sys.log', 'w') as log_file:
+        json.dump(log, log_file)
+
     return render_template('index.html', title='Daily briefing', image = "favicon.ico", alarms = alarms, notifications = notifications)
 
 @app.route('/index')
 def index():
     """ Checks for user's input and calls functions according to said inputs """
 
-    s_data.run(blocking = False)
     s.run(blocking = False)
 
-    logging.basicConfig(filename = "web_server.log")
-    
+    logging.basicConfig(filename = "sys.log", encoding = 'utf-8')
+
     notif = request.args.get('notif')
 
     #Checks if a notification close button has been clicked
@@ -69,9 +72,7 @@ def index():
 
         #Checks if the user tried to set an alarm to an invalid date, an invalid date being a date in the past
         if hhmm_to_seconds(date) <= hhmm_to_seconds(current_time):
-            logging.info(date)
             announcement("An alarm can't be scheduled for a date in the past")
-
         else:
             news_check = request.args.get("news")
             weather_check = request.args.get("weather")
@@ -119,11 +120,20 @@ def show_notifications(news: bool,weather: bool):
 
     with open('public_health_england.json', 'r') as covid_file:
         covid_file = json.load(covid_file)
+    
+    daily_cases = int(covid_file["data"][0]['newCasesByPublishDate']) - int(covid_file["data"][1]['newCasesByPublishDate'])
 
-    covid_data = covid_file["data"][0]
-
-    covid_dict = { "title": current_time + " " + covid_data["areaName"] + ": Covid Update", "content": covid_data["date"] + " New cases: " + str(covid_data["newCases"])} 
-
+    if daily_cases > 0 :
+        percentage = (daily_cases / int(covid_file["data"][1]["newCasesByPublishDate"]))
+        content = "There has been an increase of " + str(percentage) + "% in the number of cases since yesterday"
+    elif daily_cases < 0 :
+        percentage = (daily_cases / int(covid_file["data"][1]["newCasesByPublishDate"]))
+        content = "There has been an decrease of " + str(percentage) + "% in the number of cases since yesterday"
+    else :
+        content = "There hasn't been an increase nor a decrease in the number of cases since yesterday"
+    
+    covid_dict = { "title": current_time + " " + covid_file["data"][0]["areaName"] + ": Covid update", "content": content} 
+    
     notifications.append(covid_dict)
 
     #Checks if the user asked for the alarm to include a news briefing
@@ -136,7 +146,7 @@ def show_notifications(news: bool,weather: bool):
 
         article = news_file["articles"][r]["title"]
 
-        news_dict = { "title": current_time + " " + covid_data["areaName"] + ": News update", "content": article} 
+        news_dict = { "title": current_time + " " + covid_file["data"][0]["areaName"] + ": News update", "content": article} 
 
         notifications.append(news_dict)
 
@@ -148,7 +158,7 @@ def show_notifications(news: bool,weather: bool):
         celsius = weather_file["main"]["temp"] - 272.157
         weather_description = weather_file["weather"][0]["description"] 
 
-        weather_dict = { "title": current_time + " " + covid_data["areaName"] + ": Weather update", "content": "The temperature is: " + str(format(celsius, '.2f')) + " ºC and the weather is " + weather_description } 
+        weather_dict = { "title": current_time + " " + covid_file["data"][0]["areaName"] + ": Weather update", "content": "The temperature is: " + str(format(celsius, '.2f')) + " ºC and the weather is " + weather_description } 
 
         notifications.append(weather_dict)
 
@@ -216,10 +226,12 @@ def load_data():
 
 def update_data():
     """Every hour the data from the apis will be updated"""
-    
+
     get_apis.get_news()
     get_apis.get_weather()
     get_apis.get_covid()
+
+    s.enter(3600,1,update_data)
 
 def announcement(quote: str):
     """ Makes the computer read a quote out loud """

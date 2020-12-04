@@ -170,3 +170,73 @@ INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:31:15] "[37mGET /index HTTP/1.1[0m
 INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:32:15] "[37mGET /index HTTP/1.1[0m" 200 -
 INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:33:15] "[37mGET /index HTTP/1.1[0m" 200 -
 INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:34:15] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:35:15] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:36:16] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:37:16] "[37mGET /index HTTP/1.1[0m" 200 -
+ERROR:web_server:Exception on /index [GET]
+Traceback (most recent call last):
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Utilizador\Desktop\University\Programming\Assessment 3\web_server.py", line 67, in index
+    if date and label:
+  File "C:\Users\Utilizador\Desktop\University\Programming\Assessment 3\web_server.py", line 215, in load_data
+    return alarms,notifications
+FileNotFoundError: [Errno 2] No such file or directory: 'alarms.json'
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:38:16] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+ERROR:web_server:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Utilizador\Desktop\University\Programming\Assessment 3\web_server.py", line 28, in main
+    alarms,notifications = [],[]
+  File "C:\Users\Utilizador\Desktop\University\Programming\Assessment 3\web_server.py", line 223, in update_data
+  File "C:\Users\Utilizador\Desktop\University\Programming\Assessment 3\get_apis.py", line 19, in get_news
+    with open('config.json', 'r') as config_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'config.json'
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:41:37] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:web_server:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Utilizador\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Utilizador\Desktop\University\Programming\Assessment 3\web_server.py", line 28, in main
+    alarms,notifications = [],[]
+  File "C:\Users\Utilizador\Desktop\University\Programming\Assessment 3\web_server.py", line 223, in update_data
+  File "C:\Users\Utilizador\Desktop\University\Programming\Assessment 3\get_apis.py", line 19, in get_news
+    with open('config.json', 'r') as config_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'config.json'
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:41:39] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:43:10] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:44:10] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:45:10] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:46:10] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2020 06:47:10] "[37mGET /index HTTP/1.1[0m" 200 -

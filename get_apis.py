@@ -1,16 +1,20 @@
+from uk_covid19 import Cov19API
 import geocoder
+import logging
 import requests
 import json
 
+logging.basicConfig(filename = "sys.log", encoding = 'utf-8')
+
 #get_location function
-def get_current_location():
+def get_location():
     """This function gets the location of the user"""
     current_location_data = geocoder.ip('me')
 
     return current_location_data.city
 
 #get news function
-def get_news():
+def get_news() -> None:
     """Getting data from news api"""
 
     #Data request from the api
@@ -26,15 +30,15 @@ def get_news():
 
     response = requests.get(complete_url, timeout = 10)
     
-    if response.status_code >= 400:
-        print('News request failed')
+    if response.status_code <= 400:
+        logging.info('News request failed')
         
     #store news in file
     with open('news.json', 'w') as news_file:
         json.dump(response.json(), news_file)
 
 #get weather function
-def get_weather():
+def get_weather() -> None:
     """Getting data from weather API"""
     
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
@@ -50,36 +54,30 @@ def get_weather():
     response = requests.get(complete_url, timeout = 10)
     
     if response.status_code >= 400:
-        print('Weather request failed')
-
-    #The relevant weather information is for me the Air Temperature and the Weather Description
-    ##response = response.json()
-    ##celsius = response["main"]["temp"] - 272.15
-    ##weather_description = response["weather"][0]["description"]   
+        logging.info('Weather request failed')
             
     #store weather data in file
     with open('weather.json', 'w') as weather_file:
         json.dump(response.json(), weather_file)
         
 #get uk covid numbers
-def get_covid():
+def get_covid() -> None:
     """Getting data from uk covid api"""
-    
-    base_url ='https://api.coronavirus.data.gov.uk/v1/data?'
 
     city_name = get_location()
     
-    filters = 'filters=areaType=ltla;areaName='+city_name
+    local_only = [
+        'areaName={}'.format(city_name)
+    ]
+    data = {
+        "date": "date",
+        "areaName": "areaName",
+        "newCasesByPublishDate": "newCasesByPublishDate"
+    }
+    api = Cov19API(filters = local_only, structure = data)
 
-    structure = 'structure={"areaName":"areaName", "date":"date","newCases":"newCasesByPublishDate","cumCasesByPublishDate":"cumCasesByPublishDate"}'
-
-    complete_url = base_url + filters + '&' + structure
-    
-    response = requests.get(complete_url, timeout = 10)
-
-    if response.status_code >= 400:
-        print('Covid request failed')
-                                            
+    covid_data = api.get_json()
+                                    
     #store covid data in file
     with open('public_health_england.json', 'w') as covid_file:
-        json.dump(response.json(), covid_file)
+        json.dump(covid_data, covid_file)
